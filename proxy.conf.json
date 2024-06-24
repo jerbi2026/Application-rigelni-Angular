@@ -1,0 +1,8 @@
+{
+    "/api": {
+      "target": "http://api.wolframalpha.com",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+  

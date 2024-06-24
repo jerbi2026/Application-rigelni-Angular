@@ -1,0 +1,103 @@
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1%;
+
+}
+
+.card {
+    width: 100%;
+    margin-top: 1%;
+    background: #00D9A5;
+    color: black;
+    position: relative;
+    border-radius: 2.5em;
+    padding: 2em;
+    transition: transform 0.4s ease;
+  }
+  
+  .card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5em;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+  
+  .card .card-top, .card .card-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card .card-top p, .card .card-top .card-title, .card .card-bottom p, .card .card-bottom .card-title {
+    margin: 0;
+  }
+  
+  .card .card-title {
+    font-weight: bold;
+  }
+  
+  .card .card-top p, .card .card-bottom p {
+    font-weight: 600;
+  }
+  
+  .card .card-bottom {
+    align-items: flex-end;
+  }
+  
+  .card .card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    pointer-events: none;
+  }
+  
+  .card .card-image svg {
+    width: 4em;
+    height: 4em;
+    transition: transform 0.4s ease;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+  }
+  
+  .card:hover .card-content {
+    transform: scale(0.96);
+  }
+  
+  .card:hover .card-image svg {
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.9);
+  }
+
+
+  .container {
+    padding-top: 2%;
+  }
+
+  .row{
+    margin-top: 2%;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  iframe{
+    margin-top: 2%;
+  }
